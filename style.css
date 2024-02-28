@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+font-family: 'Gowun Batang', serif;
+font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.body-section{
+    overflow: hidden;
+}
+.nav-container{
+    width: 80%;
+    margin: auto;
+}
+.full-content{
+    border-bottom: 1px solid #8b8b8b60;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+    object-fit: cover ;
+    /* vertical-align: top; */
+}
+img:hover{
+    scale: 1.05 ;
+    opacity: 0.8;
+}
+h3{
+    color: #525252;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+p{
+    color: #333333;
+    padding: 5px 0;
+    text-align: justify;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+a{
+    color: #525252;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+a:hover{
+    color: #a161bf;
+    /* border-bottom:2px solid orange ; */
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+/* background:linear-gradient#7051fa  ,#362775 #ffffff () */
+
+/*------------ Navigation starts ---------------*/   
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+
+}
+nav ul li a i {
+    font-size: 18px;
+}
+nav ul li a:hover{
+    background-color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.second-ul li:last-child{
+    margin-left: auto;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+/* this 100% width just for safe */
+.sidebar li a{
+    width: 100%;
+}
+
+/*----- search bar --------*/
+.searchTop input{
+    padding: 5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border: 1px solid gray;
+    border-radius: 7px 0 0 7px;
+}
+.searchTop button{
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    border-radius: 0 7px 7px 0;
+    margin-left: -2px;
+}
+
+/*====== Menu bar ======*/
+.menu-button{
+    display: none;
+}
+/*--------- Nav part end--------*/
+
+/*-------------- Slider part start here --------------*/
+.slider-sec{
+    background-color: rgba(0, 0, 0, 0.247);
+    overflow: auto;
+    padding: 20px 0;
+}
+.slider{
+    width: 65%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+figure{
+    position: relative;
+    margin-left: 0;
+    width: 400%;
+    animation: razia-slide 30s infinite;
+}
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+    
+}
+.slide h1{
+    position: absolute;
+    font-size:2em;
+    color: white;
+    text-shadow: 1px 1px 2px;
+}
+.slide img{
+    width: 100%;
+    height: 60vh;
+    
+}
+.slide img:hover{
+    scale: none;
+    opacity:1;
+}
+
+@keyframes razia-slide {
+    0%{
+        margin-left: 0;
+    }
+    
+    25%{
+        margin-left: -100%;
+    }
+    
+    50%{
+        margin-left: -200%;
+    }
+    
+    75%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+    
+    
+}
+
+
+
+/*-------- slider section part 2 ------------*/
+/* Slider with css Background img*/
+/* section.slider-sec{
+    width: 100%;
+    height: 80vh;
+    /* background-color: gray; */
+/* }
+.slider{
+    width: 60%;
+    height: 500px;
+    background-image: url("images/img.jpg");
+    margin: auto;
+    margin-top: 3%;
+    background-size: 80% 150%;
+    background-repeat: no-repeat;
+    animation: couple-slide 20s ease infinite;
+} */
+/* @keyframes couple-slide {
+    20%{
+        background-image: url(images/form-tower.jpg);
+    }
+
+    40%{
+        background-image: url(images/bhawal-uddan.jpg);
+    }
+    
+    60%{
+        background-image: url(images/fisrt-capture-pic.jpg);
+    }
+    
+    80%{
+        background-image: url(images/class-room1.jpg);
+    }
+    100%{
+        background-image: url(images/img2.jpg);
+    }
+} */ 
+/* slider part ends */
+
+
+
+
+
+/*========================== Left articale section =============================*/
+
+/*----------- Articale body tools --------------*/
+.left-articale{
+    width: 65%;
+    text-align: center;
+    margin-right: 3%;
+    float: left;
+}.right-articale{
+    width: 32%;
+    text-align: center;
+    overflow: hidden;
+}
+.heading-title{
+    padding: 40px 0 20px 0;
+    position: relative;
+}
+.heading-title p{
+    text-transform: uppercase;
+    color: #696969;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}.heading-title p:last-child{
+    text-transform: capitalize;
+    
+}
+.heading-title .dag{
+    width: 50px;
+    height: 2px;
+    background-color: #a161bf;
+    position: absolute;
+    top: 63px;
+    left: 46%;
+}
+
+.heading-title h2{
+    text-transform: capitalize;
+    color: #696969;
+    font-family: 'lora' sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.image-div {
+    height: 400px;
+    overflow: hidden;
+}
+.image-div img{
+    width: 100%;
+}
+
+
+
+
+/* left bottom double contents */
+.left-articale-double-content {
+    width: 100%;
+}
+.left-articale-double-content .full-content{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+.left-articale-double-content .full-content:nth-child(even){
+    margin-right: 0;
+    margin-left: 2%;
+}
+.left-articale-double-content .full-content .heading-title h2{
+    font-size: 29px;
+    padding: 10px 0 1px
+}
+.left-articale-double-content .full-content .heading-title p{
+    font-size: 12px;
+
+}
+
+
+
+/*================================== Right articale section =============================================*/
+.right-articale{
+    overflow: hidden;
+    width: 32%; 
+}
+
+
+    /* about me */
+.about-me{
+    width: 100%;
+    padding: 60px 0 30px;
+    text-align: justify;
+}
+.about-me .image-div{
+    height: 300px;
+    border-radius: 5px;
+}
+.head-section{
+    position: relative;
+    margin-top:30px;
+}
+ .head-section h2{
+    text-transform: uppercase;
+    color: rgb(78, 77, 77);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 0px;
+    text-align: justify;
+}
+ .head-section i{
+    position:absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #a161bf;
+    top: 80%;
+    left: 0;
+}
+.about-me img{
+    width: 100%;
+}
+.about-me .button a{
+    border: none;
+    padding: 0;
+    
+}
+
+
+/* Follow me area */
+
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.socials a{
+    font-size: 18px;
+    /* padding: 0 15px; */
+}
+
+
+/*------------- Recent post area ------------------*/
+.recent-post{
+    overflow: hidden;
+    margin: 20px 0;
+}
+.recent-img{
+    width: 100px;
+    height: 110px;
+    float: left;
+    margin-right: 5%;
+    overflow: hidden;
+    transition: all .2s;
+}
+ 
+.recent-post-details{
+    width: 55%;
+    overflow: hidden;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+
+/*=========== search area =============*/
+.search-2{
+    margin: 50px 0;
+}
+.search-2 [type="search"] {
+    width: 80%;
+    float: left;
+    padding: 8px 5px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius:  5px 0 0 5px;
+}
+.search-2 button{
+    width: 20%;
+    overflow: hidden;
+    padding: 8px 0;
+    font-size: 16px;
+    border: 1px solid gray;
+    outline: none;
+    border-left: none;
+    background-color: gray;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+
+/* =============== Categories area ==============*/
+.categories-section{
+    width: 100%;
+}
+.categories-section  ul{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+}
+.categories-section  ul li{
+    width: 100%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding: 10px 0;
+}
+.categories-section  ul li a{
+    border: none;
+}
+.categories-section  ul li  span{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- Footer area starts ---------------*/
+
+footer{
+    overflow: hidden;
+    background-color: #F2F2F2;
+    color: #696969;
+}
+footer nav{
+    background-color:#F2F2F2 ;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 10px;
+}
+footer nav ul li a{
+    border: none;
+    font-size: 18px;
+    margin: 50px 15px 25px;   
+    color: #929292;
+
+}
+footer nav ul li a:hover{
+    text-decoration: none;
+}
+footer nav  p{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #929292;
+}
+
+
